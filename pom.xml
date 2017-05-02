@@ -12,7 +12,8 @@
 
     <properties>
         <start-class>org.cloudfoundry.community.servicebroker.postgresql.Application</start-class>
-        <spring-boot-cf-service-broker.version>1.0.0.RC3</spring-boot-cf-service-broker.version>
+        <!-- <spring-boot-cf-service-broker.version>1.0.0.RC3</spring-boot-cf-service-broker.version> -->
+        <spring-boot-cf-service-broker.version>1.0.0.RELEASE</spring-boot-cf-service-broker.version>
     </properties>
 
     <dependencies>
