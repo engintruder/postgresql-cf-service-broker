@@ -6,7 +6,7 @@ The broker currently publishes a single service and plan for provisioning Postgr
 
 The broker uses a PostgreSQL table for it's meta data. It does not maintain an internal database so it has no dependencies besides PostgreSQL.
 
-Capability with the Cloud Foundry service broker API is indicated by the project version number. For example, version 2.8.0 is based off the 2.8 version of the broker API.
+Capability with the Cloud Foundry service broker API is indicated by the project version number. For example, version 2.11.0 is based off the 2.11 version of the broker API.
 
 ## Running
 
@@ -15,7 +15,7 @@ Simply run the JAR file and provide a PostgreSQL jdbc url via the `MASTER_JDBC_U
 ### Locally
 
 ```
-mvn package && MASTER_JDBC_URL=jdbcurl java -jar target/postgresql-cf-service-broker-2.8.0-SNAPSHOT.jar
+mvn package && MASTER_JDBC_URL=jdbcurl java -jar target/postgresql-cf-service-broker-2.11.0-SNAPSHOT.jar
 ```
 
 ### In Cloud Foundry
@@ -38,7 +38,7 @@ cf bind-running-security-group postgresql-service
 
 Build the package with `mvn package` then push it out:
 ```
-cf push postgresql-cf-service-broker -p target/postgresql-cf-service-broker-2.8.0-SNAPSHOT.jar --no-start
+cf push postgresql-cf-service-broker -p target/postgresql-cf-service-broker-2.11.0-SNAPSHOT.jar --no-start
 ```
 
 Export the following environment variables:
